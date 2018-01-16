@@ -5,6 +5,8 @@
  */
 package hellogit;
 
+import java.util.Scanner;
+
 /**
  *
  * @author bluesight
@@ -13,7 +15,10 @@ public class HelloGit {
 
    
     public static void main(String[] args) {
-        System.out.println("Hello Git");
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input your name : ");
+        String name = input.nextLine();
+        System.out.println("Hello "+name);
     }
     
 }
